@@ -1,55 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name-="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Contact Form</title>
+  <title>Contact Form</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      padding: 50px;
-      display: flex;
-      justify-content: center;
-    }
-    form {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    button {
-      background: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #45a049;
-    }
-    .success {
-      color: green;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+    form { max-width: 400px; margin: auto; }
+    input, textarea { width: 100%; padding: 10px; margin: 8px 0; }
   </style>
 </head>
 <body>
-
-   <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+  <form>
     <h2>Contact Me</h2>
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-   </form>
-  </body>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</body>
 </html>
